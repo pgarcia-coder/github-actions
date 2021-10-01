@@ -1,7 +1,7 @@
 name: GitHub Actions
-on: []
+on: [push]
 jobs:
-  npm-test:
+  npm-install:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -9,4 +9,3 @@ jobs:
         with:
           node-version: '14'
       - run: npm install
-      - run: npm test

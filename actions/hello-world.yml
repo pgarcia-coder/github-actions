@@ -1,5 +1,5 @@
 name: GitHub Actions
-on: []
+on: [push]
 jobs:
   hello-world:
     runs-on: ubuntu-latest

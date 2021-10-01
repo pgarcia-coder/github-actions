@@ -9,11 +9,10 @@ jobs:
       env:
         DOCKER_USER: ${{secrets.DOCKER_USER}}
         DOCKER_PASSWORD: ${{secrets.DOCKER_HUB_TOKEN}}
-        COMMIT: ${{github.sha}}
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile -t pgarciacoder/github-actions:$COMMIT
+      run: docker build . --file Dockerfile -t pgarciacoder/github-actions
       
     - name: Docker Push
-      run: docker push -t pgarciacoder/github-actions:$COMMIT
+      run: docker push pgarciacoder/github-actions

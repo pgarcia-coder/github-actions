@@ -1,5 +1,5 @@
 name: GitHub Actions
-on: [push]
+on: []
 jobs:
   npm-test:
     runs-on: ubuntu-latest

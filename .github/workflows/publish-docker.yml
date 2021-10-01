@@ -13,7 +13,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag pgarciacoder/github-actions:$COMMIT
+      run: docker build . --file Dockerfile -t pgarciacoder/github-actions:$COMMIT
       
     - name: Docker Push
       run: docker push -t pgarciacoder/github-actions:$COMMIT

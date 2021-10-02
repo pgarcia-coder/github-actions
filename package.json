@@ -1,0 +1,27 @@
+{
+  "name": "github-actions",
+  "version": "1.0.0",
+  "description": "Github actions examples",
+  "main": "index.js",
+  "scripts": {
+    "start": "node start.js",
+    "test": "mocha **/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgarcia-coder/github-actions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgarcia-coder/github-actions/issues"
+  },
+  "homepage": "https://github.com/pgarcia-coder/github-actions#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.2",
+    "supertest": "^6.1.6"
+  }
+}

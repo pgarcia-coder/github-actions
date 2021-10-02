@@ -12,6 +12,7 @@ jobs:
           git config user.name bot
           git config user.email bot@mail.com
           VERSION=$(npm version patch)
+          git pull
           git add .
           git commit -m "bump $VERSION"
           git push

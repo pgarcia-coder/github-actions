@@ -9,9 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          VERSION=$(npm version patch)
           git config user.name bot
           git config user.email bot@mail.com
+          VERSION=$(npm version patch)
           git add .
           git commit -m "bump $VERSION"
           git push
